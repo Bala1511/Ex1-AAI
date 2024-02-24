@@ -27,8 +27,7 @@ Step 14:Update margins and display the graph using matplotlib.pyplot<br/>
 ## Program:
 ### Import a packages
 
-''' 
-import pandas as pd
+''' import pandas as pd
 import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
