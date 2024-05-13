@@ -41,7 +41,6 @@ from pybbn.pptc.inferencecontroller import InferenceController
 pd.options.display.max_columns=50
 
 ```
-
 ### Read a data set
 ```
 df=pd.read_csv("/content/weatherAUS.csv",encoding='utf-8')
@@ -51,8 +50,6 @@ df['WindGustSpeedCat']=df['WindGustSpeed'].apply(lambda x: '0.<=40'   if x<=40 e
 df['Humidity9amCat']=df['Humidity9am'].apply(lambda x: '1.>60' if x>60 else '0.<=60')
 df['Humidity3pmCat']=df['Humidity3pm'].apply(lambda x: '1.>60' if x>60 else '0.<=60')
 
-```
-```
 def probs(data, child, parent1=None, parent2=None):
     if parent1==None:
         # Calculate probabilities
